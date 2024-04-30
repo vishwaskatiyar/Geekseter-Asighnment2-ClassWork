@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+
+
+
+
+
+    <script type="text/babel">
+        function Widget() {
+            return (
+                <div className="max-w-4xl mx-auto px-4 py-8">
+                    <h1 className="text-2xl font-bold mb-4">Topics covered</h1>
+                    <p className="mb-6">The following is a list of all the topics we cover in the MDN learning area.</p>
+
+                    <div className="space-y-4">
+                        <div>
+                            <h2 className="text-xl font-semibold text-blue-600">Getting started with the web</h2>
+                            <p>Provides a practical introduction to web development for complete beginners.</p>
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-semibold text-blue-600">HTML — Structuring the web</h2>
+                            <p>HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail.</p>
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-semibold text-blue-600">CSS — Styling the web</h2>
+                            <p>CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation. This topic provides comprehensive coverage of CSS.</p>
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-semibold text-blue-600">JavaScript — Adding interactivity</h2>
+                            <p>JavaScript is a programming language that allows you to add interactivity to your web pages. Learn how to use JavaScript to make your websites dynamic and responsive.</p>
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-semibold text-blue-600">React — Building user interfaces</h2>
+                            <p>React is a JavaScript library for building user interfaces. This topic covers the fundamentals of React and how to create interactive UI components.</p>
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-semibold text-blue-600">Figma — Designing interfaces</h2>
+                            <p>Figma is a web-based design tool used for creating user interfaces, prototypes, and collaborative design projects. Learn how to use Figma to design beautiful and functional interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+
+            )
+        }
+
+        const root = document.getElementById('root');
+        const rendererRoot = ReactDOM.createRoot(root);
+        rendererRoot.render(
+            <Widget />
+        );
+    </script>
+</body>
+
+</html>
